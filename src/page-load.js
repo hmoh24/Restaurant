@@ -60,7 +60,6 @@ function loadPage() {
         buttonArray[i].style.fontSize = '50px';
     }
 
-    let page = 1;
 }
 
 export default loadPage

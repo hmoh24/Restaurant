@@ -2,25 +2,28 @@ import loadPage from "./page-load.js";
 import loadMenuTab from "./menu.js";
 loadPage();
 
-let tabChosen = home;
+let tabChosen;
 
 const homeButton = document.querySelector('#home')
 homeButton.addEventListener('click', (e) =>{
     tabChosen = home;
+    tabLogic();
 })
 
 const menuButton = document.querySelector('#menu')
 menuButton.addEventListener('click', (e) =>{
     tabChosen = menu;
+    tabLogic();
 })
 
 const contactButton = document.querySelector('#contact')
 contactButton.addEventListener('click', (e) =>{
     tabChosen = contact;
+    tabLogic();
 })
 
 function tabLogic(){
-    if (tabChosen === home && page !== 1){
+    if (tabChosen === home ){
         loadPage();
     }
     else if(tabChosen === menu){
@@ -33,4 +36,5 @@ function tabLogic(){
 
 }
 
-tabLogic();
+// on click clear all html when changing page
+// on click clear select styling
