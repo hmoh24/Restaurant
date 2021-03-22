@@ -1,33 +1,37 @@
 import loadPage from "./page-load.js";
 import loadMenuTab from "./menu.js";
+import loadContactTab from "./contact.js";
 loadPage();
 
 let tabChosen;
 
 const homeButton = document.querySelector('#home')
 homeButton.addEventListener('click', (e) =>{
-    tabChosen = home;
+    tabChosen = 'home';
     tabLogic();
 })
 
 const menuButton = document.querySelector('#menu')
 menuButton.addEventListener('click', (e) =>{
-    tabChosen = menu;
+    tabChosen = 'menu';
     tabLogic();
 })
 
 const contactButton = document.querySelector('#contact')
 contactButton.addEventListener('click', (e) =>{
-    tabChosen = contact;
+    tabChosen = 'contact';
     tabLogic();
 })
 
 function tabLogic(){
-    if (tabChosen === home ){
+    if (tabChosen === 'home' ){
         loadPage();
     }
-    else if(tabChosen === menu){
+    else if(tabChosen === 'menu'){
         loadMenuTab();
+    }
+    else if(tabChosen === 'contact'){
+        loadContactTab();
     }
 
     // else if(tabChosen === home){
