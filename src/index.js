@@ -4,21 +4,25 @@ import loadContactTab from "./contact.js";
 loadPage();
 
 let tabChosen;
+const contentDiv = document.querySelector('#content');
 
 const homeButton = document.querySelector('#home')
 homeButton.addEventListener('click', (e) =>{
+    contentDiv.innerHTML = '';
     tabChosen = 'home';
     tabLogic();
 })
 
 const menuButton = document.querySelector('#menu')
 menuButton.addEventListener('click', (e) =>{
+    contentDiv.innerHTML = '';
     tabChosen = 'menu';
     tabLogic();
 })
 
 const contactButton = document.querySelector('#contact')
 contactButton.addEventListener('click', (e) =>{
+    contentDiv.innerHTML = '';
     tabChosen = 'contact';
     tabLogic();
 })

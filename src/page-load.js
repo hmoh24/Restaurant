@@ -6,6 +6,7 @@ function loadPage() {
     const body = document.querySelector('body');
     body.style.width = '100vw';
     body.style.height = '100vh';
+    body.style.position = 'relative';
 
 
     const contentDiv = document.querySelector('#content');
@@ -15,28 +16,19 @@ function loadPage() {
     contentDiv.style.flexDirection = 'row';
     contentDiv.style.justifyContent = 'flex-start';
     contentDiv.style.backgroundColor = 'white';
+    contentDiv.style.backgroundImage = "url('/dist/photo3.jpeg')";
+    contentDiv.style.backgroundRepeat = 'no-repeat';
+    contentDiv.style.backgroundSize = 'cover';
+    contentDiv.style.backgroundAttachment = 'scroll';
 
-    const homePageContent = document.createElement('div');
-    homePageContent.setAttribute('id', 'homePageContent');
-    homePageContent.style.width = '100vw';
-    homePageContent.style.height = '100vh';
-    homePageContent.style.display = 'flex';
-    homePageContent.style.flexDirection = 'row';
-    homePageContent.style.justifyContent = 'flex-start';
-    homePageContent.style.backgroundColor = 'black';
-    homePageContent.style.backgroundImage = "url('/dist/photo3.jpeg')";
-    homePageContent.style.backgroundRepeat = 'no-repeat';
-    homePageContent.style.backgroundSize = 'cover';
-    homePageContent.style.backgroundAttachment = 'scroll';
-
-    let sideBar = document.createElement('div');
-    sideBar.setAttribute('id', 'sideBar');
+    const sideBar = document.querySelector('#sideBar');
     sideBar.style.width = '300px';
     sideBar.style.height = '100vh';
-    sideBar.style.backgroundColor = 'black'
-    sideBar.style.opacity = '0.7';
+    sideBar.style.backgroundColor = 'rgba(0,0,0, 0.8)';
     sideBar.style.position = 'absolute';
+    sideBar.style.top = '0';
     sideBar.style.left = '0';
+    sideBar.style.zIndex = '1';
     
     let header = document.createElement('header');
     header.textContent = 'Island Delights';
@@ -58,13 +50,12 @@ function loadPage() {
 
 
     
-    contentDiv.appendChild(sideBar);
+    
     sideBar.appendChild(homeButton);
     sideBar.appendChild(menuButton);
     sideBar.appendChild(contactButton);
 
-    contentDiv.appendChild(homePageContent);
-    homePageContent.appendChild(header);
+    contentDiv.appendChild(header);
 
     
     
