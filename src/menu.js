@@ -4,7 +4,7 @@ function loadMenuTab() {
     html.style.backgroundImage = "url('/dist/photo3.jpeg')";
 
     const body = document.querySelector('body');
-    body.style.width = '100vw';
+    body.style.width = '100vw';     
     body.style.height = '100vh';
 
     const contentDiv = document.querySelector('#content');
@@ -21,12 +21,13 @@ function loadMenuTab() {
     containerDiv.style.backgroundColor = 'rgba(0,0,0, 0.5)';
     containerDiv.style.display = 'flex';
     containerDiv.style.flexWrap = 'wrap';
-    
+    containerDiv.style.border = '1px solid black';
+
     let menuItem1 = document.createElement('div');
     menuItem1.style.width = '150px';
     menuItem1.style.height = '150px';
     menuItem1.style.backgroundColor = 'black';
-    menuItem1.style.border = '2px solid white';
+    menuItem1.style.border = '1px solid white';
     menuItem1.style.margin = '10px';
     menuItem1.setAttribute('id', 'item1');
     
@@ -34,7 +35,7 @@ function loadMenuTab() {
     menuItem2.style.width = '150px';
     menuItem2.style.height = '150px';
     menuItem2.style.backgroundColor = 'black';
-    menuItem2.style.border = '2px solid white';
+    menuItem2.style.border = '1px solid white';
     menuItem2.style.margin = '10px';
     menuItem2.setAttribute('id', 'item2');
 
@@ -42,7 +43,7 @@ function loadMenuTab() {
     menuItem3.style.width = '150px';
     menuItem3.style.height = '150px';
     menuItem3.style.backgroundColor = 'black';
-    menuItem3.style.border = '2px solid white';
+    menuItem3.style.border = '1px solid white';
     menuItem3.style.margin = '10px';
     menuItem3.setAttribute('id', 'item3');
 
@@ -50,7 +51,7 @@ function loadMenuTab() {
     menuItem4.style.width = '150px';
     menuItem4.style.height = '150px';
     menuItem4.style.backgroundColor = 'black';
-    menuItem4.style.border = '2px solid white';
+    menuItem4.style.border = '1px solid white';
     menuItem4.style.margin = '10px';
     menuItem4.setAttribute('id', 'item4');
     
@@ -58,7 +59,7 @@ function loadMenuTab() {
     menuItem5.style.width = '150px';
     menuItem5.style.height = '150px';
     menuItem5.style.backgroundColor = 'black';
-    menuItem5.style.border = '2px solid white';
+    menuItem5.style.border = '1px solid white';
     menuItem5.style.margin = '10px';
     menuItem5.setAttribute('id', 'item5');
 
@@ -66,7 +67,7 @@ function loadMenuTab() {
     menuItem6.style.width = '150px';
     menuItem6.style.height = '150px';
     menuItem6.style.backgroundColor = 'black';
-    menuItem6.style.border = '2px solid white';
+    menuItem6.style.border = '1px solid white';
     menuItem6.style.margin = '10px';
     menuItem6.setAttribute('id', 'item6');
 

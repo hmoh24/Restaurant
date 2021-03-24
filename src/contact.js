@@ -12,6 +12,7 @@ function loadContactTab() {
     containerDiv.style.backgroundColor = 'rgba(0,0,0, 0.5)';
     containerDiv.style.display = 'flex';
     containerDiv.style.flexWrap = 'wrap';
+    containerDiv.style.border = '1px solid black';
     
     let contactForm = document.createElement('div');
     contactForm.style.width = '300px';
@@ -19,7 +20,11 @@ function loadContactTab() {
     contactForm.style.backgroundColor = 'white';
     contactForm.style.border = '5px solid black';
 
-    contentDiv.appendChild(contactForm);
+    let contactHeader = document.createElement('h2');
+
+   
+    contentDiv.appendChild(containerDiv);
+    containerDiv.appendChild(contactForm);
 }
 
 export default loadContactTab
