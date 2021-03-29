@@ -15,6 +15,8 @@ function loadContactTab() {
     containerDiv.style.border = '1px solid black';
     containerDiv.style.gridTemplateColumns = '1fr 1fr';
     containerDiv.style.gridTemplateRows = 'auto';
+    containerDiv.style.justifyItems = 'center';
+    containerDiv.style.alignItems = 'center';
 
     let contactHeader = document.createElement('h2');
     contactHeader.style.gridColumn = '1/2';
@@ -43,29 +45,18 @@ function loadContactTab() {
     let mapHolder = document.createElement('div');
     mapHolder.height = 'auto';
     mapHolder.width = 'auto';
-    mapHolder.style.backgroundColor = 'green';
     mapHolder.style.gridColumn = '2/3';
-    mapHolder.style.justifySelf = 'stretch';
-    mapHolder.style.alignSelf = 'stretch';
-    // mapHolder.innerHTML = ' <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1943.086623241186!2d-59.610582591821384!3d13.088204310228374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c43f6fe0762d6dd%3A0xf16f48b0bd756776!2sBayshore%20Beach!5e0!3m2!1sen!2suk!4v1616765193907!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>'
-
-    // let iframeMap = document.createElement('IFRAME');
-    // iframeMap.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7772.357317754809!2d-59.61223629039553!3d13.08786107586562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c43f6fe0762d6dd%3A0xf16f48b0bd756776!2sBayshore%20Beach!5e0!3m2!1sen!2suk!4v1616760541407!5m2!1sen!2suk";
-    // iframeMap.width = "400"; 
-    // iframeMap.height = "300"; 
-    // iframeMap.style.border = 'none';
-
-    // iframeMap.style.justifySelf = 'stretch';
-    // iframeMap.style.alignSelf = 'stretch';
+    mapHolder.style.gridRow = '1/5';
+    mapHolder.innerHTML = ' <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1943.086623241186!2d-59.610582591821384!3d13.088204310228374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c43f6fe0762d6dd%3A0xf16f48b0bd756776!2sBayshore%20Beach!5e0!3m2!1sen!2suk!4v1616765193907!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>'
+    mapHolder.style.display ='flex';
+    mapHolder.style.alignSelf ='center';
+    mapHolder.style.justifyContent = 'center';
     
-    // document.querySelector(containerDiv.lastChild).style.gridColumn = '2/3';
-   
     contentDiv.appendChild(containerDiv);
     containerDiv.appendChild(contactHeader);
     containerDiv.appendChild(contactPhone);
     containerDiv.appendChild(contactEmail);
     containerDiv.appendChild(contactAddress);
     containerDiv.appendChild(mapHolder);
-    // mapHolder.appendChild(iframeMap);
 }
 export default loadContactTab

@@ -44,5 +44,8 @@ function tabLogic(){
 
 }
 
-// on click clear all html when changing page
-// on click clear select styling
+// refactor menuItems into function/constructor/factory function
+// make all page.js into IIFE
+// look for tab animation to make it cleaner
+// possibly find new background image to increase readability of home page and then can possibly include a small tag line and button linking menu
+// change google maps location to greece

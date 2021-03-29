@@ -3,6 +3,7 @@ function loadPage() {
     html.style.width = '100%';
     html.style.height = '100vh';
     html.style.backgroundImage = "url('/dist/photo3.jpeg')";
+    html.style.backgroundSize = '100vw 100vh';
 
     const body = document.querySelector('body');
     body.style.width = '100%';
@@ -20,7 +21,8 @@ function loadPage() {
 
     const sideBar = document.querySelector('#sideBar');
     sideBar.style.width = '100%';
-    sideBar.style.height = '100px';
+    sideBar.style.height = '50px';
+    sideBar.style.paddingLeft = '10px';
     sideBar.style.backgroundColor = 'rgba(0,0,0, 0)';
     sideBar.style.position = 'absolute';
     sideBar.style.top = '0';
@@ -32,13 +34,13 @@ function loadPage() {
 
     let header = document.createElement('header');
     header.textContent = 'Island Delights';
-    header.style.fontSize = '100px';
-    header.style.color = 'yellow';
+    header.style.fontSize = '50px';
+    header.style.color = 'white';
 
     let headerText = document.createElement('p');
     headerText.textContent = 'Breezy, fresh, delicious.';
-    headerText.style.fontSize = '30px';
-    headerText.style.color = 'black';
+    headerText.style.fontSize = '15px';
+    headerText.style.color = '#83ae83';
     
     let homeButton = document.createElement('button');
     homeButton.setAttribute('id', 'home');
@@ -55,7 +57,7 @@ function loadPage() {
     let title = document.createElement('h2');
     title.setAttribute('id', 'title');
     title.textContent = 'Island Delights';
-    title.style.color = 'white';
+    title.style.color = '#56c1f4';
     title.style.marginLeft = '600px';    
 
     
@@ -77,7 +79,7 @@ function loadPage() {
     let buttonArray = Array.from(button);
     
     for(let i=0; i<buttonArray.length; i++) {
-        buttonArray[i].style.color = 'white';
+        buttonArray[i].style.color = '#56c1f4';
         buttonArray[i].style.fontSize = '20px';
         buttonArray[i].style.backgroundColor = 'transparent';
         buttonArray[i].style.border = 'none';
@@ -88,9 +90,5 @@ function loadPage() {
 export default loadPage
 
 
-// container/content --> add a new container that fits the content --> append all child nodes to newer container --> tab logic is remove all child nodes 
-// keep tabs/menu stationary and keep content div stationary and apply flex to content to arrange tabs and new content holder.
-//remove holder on each page switch --> no need to worry about styling changes in JS
-// optimise code to follow DRY principle
 
-//ISSUE: buttons not working on menu tab because they are being deleted and now being clicked without any event listeners due to being deleted.
+// optimise code to follow DRY principle
