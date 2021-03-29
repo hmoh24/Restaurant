@@ -91,4 +91,3 @@ export default loadPage
 
 
 
-// optimise code to follow DRY principle

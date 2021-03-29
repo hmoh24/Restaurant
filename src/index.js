@@ -1,7 +1,9 @@
 import loadPage from "./page-load.js";
 import loadMenuTab from "./menu.js";
 import loadContactTab from "./contact.js";
+
 loadPage();
+
 
 let tabChosen;
 const contentDiv = document.querySelector('#content');
@@ -27,25 +29,26 @@ contactButton.addEventListener('click', (e) =>{
     tabLogic();
 })
 
+function tabHighlighter(button, button1, button2){
+    button.style.boxShadow = '0px 2px 0px 0px rgba(131, 174, 131,1)';
+    button1.style.boxShadow = 'none';
+    button2.style.boxShadow = 'none';
+}
+
+tabHighlighter(homeButton, contactButton, menuButton);
+
 function tabLogic(){
     if (tabChosen === 'home' ){
         loadPage();
+        tabHighlighter(homeButton, contactButton, menuButton);
     }
     else if(tabChosen === 'menu'){
         loadMenuTab();
+        tabHighlighter(menuButton, contactButton, homeButton);
     }
     else if(tabChosen === 'contact'){
         loadContactTab();
+        tabHighlighter(contactButton, menuButton, homeButton);
     }
-
-    // else if(tabChosen === home){
-    //     //fnx
-    // }
-
 }
 
-// refactor menuItems into function/constructor/factory function
-// make all page.js into IIFE
-// look for tab animation to make it cleaner
-// possibly find new background image to increase readability of home page and then can possibly include a small tag line and button linking menu
-// change google maps location to greece
