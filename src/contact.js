@@ -2,7 +2,7 @@ function loadContactTab() {
 
     const html = document.querySelector('html');
     html.style.backgroundColor = 'green';
-    html.style.backgroundImage = "url('/dist/photo3.jpeg')";
+    html.style.backgroundImage = "url('/photo3.jpeg')";
 
     const contentDiv = document.querySelector('#content');
     

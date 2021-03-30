@@ -2,7 +2,7 @@ function loadPage() {
     const html = document.querySelector('html');
     html.style.width = '100%';
     html.style.height = '100vh';
-    html.style.backgroundImage = "url('/dist/photo3.jpeg')";
+    html.style.backgroundImage = "url('/photo3.jpeg')";
     html.style.backgroundSize = '100vw 100vh';
 
     const body = document.querySelector('body');
