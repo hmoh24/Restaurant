@@ -1,7 +1,7 @@
 function loadMenuTab() {
 
     const html = document.querySelector('html');
-    html.style.backgroundImage = "url('/photo3.jpeg')";
+    html.style.backgroundImage = "url('photo3.jpeg')";
 
     const body = document.querySelector('body');
     body.style.width = '100vw';     
@@ -57,12 +57,12 @@ function loadMenuTab() {
     
     contentDiv.appendChild(containerDiv);
     containerDiv.appendChild(header);
-    pictureAndDescriptionGenerate("url('/breakfast.jpeg')", '1/2', 'Breakfast Menu');
-    pictureAndDescriptionGenerate("url('/burger.jpeg')", '2/3', 'Burger Menu');
-    pictureAndDescriptionGenerate("url('/seafood.jpeg')", '3/4', 'Seafood Menu');
-    pictureAndDescriptionGenerate("url('/steak.jpeg')", '4/5', 'Steak Menu');
-    pictureAndDescriptionGenerate("url('/dessert.jpeg')", '5/6', 'Dessert Menu');
-    pictureAndDescriptionGenerate("url('/fruits.jpeg')", '6/7', 'Fruits Menu');
+    pictureAndDescriptionGenerate("url('breakfast.jpeg')", '1/2', 'Breakfast Menu');
+    pictureAndDescriptionGenerate("url('burger.jpeg')", '2/3', 'Burger Menu');
+    pictureAndDescriptionGenerate("url('seafood.jpeg')", '3/4', 'Seafood Menu');
+    pictureAndDescriptionGenerate("url('steak.jpeg')", '4/5', 'Steak Menu');
+    pictureAndDescriptionGenerate("url('dessert.jpeg')", '5/6', 'Dessert Menu');
+    pictureAndDescriptionGenerate("url('fruits.jpeg')", '6/7', 'Fruits Menu');
     
     
 }
